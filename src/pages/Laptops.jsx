@@ -1,12 +1,13 @@
 import React from 'react'
 import { productsArray, getProductByType } from '../products'
+import ProductCard from '../components/ProductCard'
 
 export default function Laptops(){
     const laptopProducts = getProductByType('laptop')    
     const laptopElement = laptopProducts.map((laptop => {
         return(
         <section key={laptop.id} className='product-card'>
-            {laptop.name}
+            <ProductCard product={laptop} />
         </section>)
     }))
     
