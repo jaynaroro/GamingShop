@@ -1,0 +1,53 @@
+.App{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  outline: solid red 1px;
+}
+
+.header-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-bottom: solid 1px gray;
+}
+
+.header-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+}
+
+.header-bottom a{
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.header-bottom a:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.footer{
+  outline: solid red 1px;
+}
+
+.products{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+}
+
+.product-card{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
