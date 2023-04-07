@@ -13,7 +13,6 @@ export default function Laptops(){
     
     return (
         <div className='laptops'>
-            <h1>Gaming Laptops</h1>
             <div className='products'>
                 {laptopElement}
             </div>

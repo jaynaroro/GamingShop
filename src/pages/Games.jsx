@@ -13,7 +13,6 @@ export default function Towers(){
     
     return (
         <div className='games'>
-            <h1>Games</h1>
             <div className='products'>
                 {gameElement}
             </div>

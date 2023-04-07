@@ -1,18 +1,33 @@
 .App{
-  display: flex;
-  flex-direction: column;
-}
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
 .header{
-  outline: solid red 1px;
+  min-height: 400px;
+  background: no-repeat center center;
+  background-size: cover;
 }
 
 .header-top{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 80px;
   border-bottom: solid 1px gray;
+}
+
+.header-top a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.header-top a:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .header-bottom{
@@ -24,7 +39,7 @@
 
 .header-bottom a{
   text-decoration: none;
-  color: #4d4d4d;
+  color: whitesmoke;
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -35,20 +50,154 @@
 }
 
 .footer{
+  background-color: #252525 ;
+  color: #AAAAAA;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.home{
+  min-height: 70%;
+  background: no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home a{
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.home a:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.footer{
   outline: solid red 1px;
+}
+
+.desktops{
+  min-height: 70%;
+}
+.laptops{
+  min-height: 70%;
+}
+.games{
+  min-height: 70%;
 }
 
 .products{
   display: grid;
   gap: 20px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 400px 400px 400px;
+  padding: 20px;
 }
 
 .product-card{
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid gray;
+  border-radius: 5px;
   padding: 20px;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card img{
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.addToCart{
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: darkorange;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.removeFromCart{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.ReactModal{
+  color: red;
+}
+
+.modal{
+  outline: solid red 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.close{
+  color: #4d4d4d;
+  border: none;
+}
+
+.close:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.remove{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.purchase{
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.price{
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.counter{
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add{
+  margin-right: 10px;
+}
+
+.minus{
+  margin-left: 10px;
+}
+
+.cartProduct{
+  padding: 20px;
+  font-size: 18px;
+  border-bottom: solid gray;
 }
